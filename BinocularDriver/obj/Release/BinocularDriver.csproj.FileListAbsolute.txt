@@ -1,0 +1,11 @@
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Release\BinocularDriver.dll.config
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Release\BinocularDriver.dll
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Release\BinocularDriver.pdb
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Release\IDeviceDriver.dll
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Release\IPeopleCounterDriver.dll
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Release\Newtonsoft.Json.dll
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Release\IDeviceDriver.pdb
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Release\IPeopleCounterDriver.pdb
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Release\BinocularDriver.csprojResolveAssemblyReference.cache
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Release\BinocularDriver.dll
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Release\BinocularDriver.pdb

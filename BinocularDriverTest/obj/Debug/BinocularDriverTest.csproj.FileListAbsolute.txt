@@ -1,0 +1,21 @@
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\BinocularDriverTest\bin\Debug\BinocularDriverTest.exe.config
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\BinocularDriverTest.csprojResolveAssemblyReference.cache
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\MainWindow.baml
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\MainWindow.g.cs
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\App.g.cs
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\ATTSystems.Net.Devices.PeopleCounter.Properties.Resources.resources
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\BinocularDriverTest.csproj.GenerateResource.Cache
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\BinocularDriver.dll
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\IDeviceDriver.dll
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\IPeopleCounterDriver.dll
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\IDeviceDriver.pdb
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\IPeopleCounterDriver.pdb
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\BinocularDriver.pdb
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Binocular Driver.exe.config
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Binocular Driver.exe
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Binocular Driver.pdb
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver_MarkupCompile.cache
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver.g.resources
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver.exe
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver.pdb
+D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Newtonsoft.Json.dll

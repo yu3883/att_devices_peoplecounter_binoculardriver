@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinocularDriverTest", "BinocularDriverTest\BinocularDriverTest.csproj", "{B6CFF8E8-F90F-4B03-937F-244136111924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinocularDriver", "BinocularDriver\BinocularDriver.csproj", "{4CE60DF7-5D31-4A0B-A43B-F7F6E9359095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDeviceDriver", "..\att_devices_idevicedriver\IDeviceDriver\IDeviceDriver.csproj", "{34C4A2AE-F945-4F41-9000-EC3F4FBAD1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPeopleCounterDriver", "..\att_devices_peoplecounter_idriver\IPeopleCounterDriver\IPeopleCounterDriver.csproj", "{8BD68ADF-27C9-4F94-AB09-CBF2208CD0C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6CFF8E8-F90F-4B03-937F-244136111924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6CFF8E8-F90F-4B03-937F-244136111924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6CFF8E8-F90F-4B03-937F-244136111924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6CFF8E8-F90F-4B03-937F-244136111924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE60DF7-5D31-4A0B-A43B-F7F6E9359095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE60DF7-5D31-4A0B-A43B-F7F6E9359095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE60DF7-5D31-4A0B-A43B-F7F6E9359095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE60DF7-5D31-4A0B-A43B-F7F6E9359095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C4A2AE-F945-4F41-9000-EC3F4FBAD1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C4A2AE-F945-4F41-9000-EC3F4FBAD1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C4A2AE-F945-4F41-9000-EC3F4FBAD1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C4A2AE-F945-4F41-9000-EC3F4FBAD1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD68ADF-27C9-4F94-AB09-CBF2208CD0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD68ADF-27C9-4F94-AB09-CBF2208CD0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD68ADF-27C9-4F94-AB09-CBF2208CD0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD68ADF-27C9-4F94-AB09-CBF2208CD0C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
