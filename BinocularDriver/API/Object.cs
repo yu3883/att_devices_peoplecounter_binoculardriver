@@ -23,6 +23,14 @@ namespace ATTSystems.Net.Devices.PeopleCounter.API
         [XmlElement("Count")]
         public List<Count> Count { get; set; }
 
+        // NEW: Add support for v2.1 elements
+        [XmlElement("GenderCount")]
+        public List<GenderCount> GenderCount { get; set; }
 
+        [XmlElement("AgeCount")]
+        public List<AgeCount> AgeCount { get; set; }
+
+        [XmlElement("WorkCardCount")]
+        public List<WorkCardCount> WorkCardCount { get; set; }
     }
 }

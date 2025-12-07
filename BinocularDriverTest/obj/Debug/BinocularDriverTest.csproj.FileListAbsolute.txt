@@ -19,3 +19,23 @@ D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\B
 D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver.exe
 D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver.pdb
 D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Newtonsoft.Json.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Binocular Driver.exe.config
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver.exe
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver.pdb
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Binocular Driver.exe
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Binocular Driver.pdb
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\BinocularDriver.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\IDeviceDriver.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\IPeopleCounterDriver.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\Newtonsoft.Json.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\IDeviceDriver.pdb
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\IPeopleCounterDriver.pdb
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\bin\Debug\BinocularDriver.pdb
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\BinocularDriverTest.csprojResolveAssemblyReference.cache
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\MainWindow.baml
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\MainWindow.g.cs
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\App.g.cs
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver_MarkupCompile.cache
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\Binocular Driver.g.resources
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\ATTSystems.Net.Devices.PeopleCounter.Properties.Resources.resources
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriverTest\obj\Debug\BinocularDriverTest.csproj.GenerateResource.Cache

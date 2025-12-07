@@ -23,6 +23,8 @@ namespace ATTSystems.Net.Devices.PeopleCounter
         static public event EventHandler<string> DeviceDataSentResponse;
         public string GetInfo()
         {
+            if (DeviceDataRequestReceived != null)
+                DeviceDataRequestReceived(this, String.Format("Requesting the web service info."));
             return "This is Binocular Device Driver Webservice.";
         }
 
@@ -67,22 +69,61 @@ namespace ATTSystems.Net.Devices.PeopleCounter
             API.CounterTransactionResponse response = new API.CounterTransactionResponse();
             try
             {
+                bool needToResponse = true;
 
                 if (DeviceDataRequestReceived != null)
                     DeviceDataRequestReceived(this, String.Format("Upload Data Json Request received : {0}", request.ToString()));
 
-                API.RTMetrics transaction;
-                var serializer = new XmlSerializer(typeof(API.RTMetrics));
-                transaction = (API.RTMetrics)serializer.Deserialize(request.CreateReader());
+                API.RTMetrics rtTransaction;
+
+                if (request.Name.LocalName == "Metrics")
+                {
+                    var serializerOld = new XmlSerializer(typeof(API.Metrics));
+                    var metricsOld = (API.Metrics)serializerOld.Deserialize(request.CreateReader());
+
+                    // Convert to RTMetrics
+                    rtTransaction = new API.RTMetrics
+                    {
+                        SiteId = metricsOld.SiteId,
+                        SiteName = metricsOld.SiteName,
+                        DeviceId = metricsOld.DeviceId,
+                        DeviceName = metricsOld.DeviceName,
+                        Properties = metricsOld.Properties,
+                        ReportData = metricsOld.ReportData
+                    };
+                    needToResponse = false;
+
+                }
+                else
+                {
+                    // New version with <RTMetrics> root
+                    var serializer = new XmlSerializer(typeof(API.RTMetrics));
+                    rtTransaction = (API.RTMetrics)serializer.Deserialize(request.CreateReader());
+                    
+                }
 
                 if (CounterTransactionRequestReceived != null)
-                    CounterTransactionRequestReceived(this, transaction);
+                    CounterTransactionRequestReceived(this, rtTransaction);
+
+
+                if (needToResponse == false)
+                {
+                    if (DeviceDataSentResponse != null)
+                        DeviceDataSentResponse(this, "response only status 200 with no XML body");
+
+                    return null;
+                    // WCF will automatically return HTTP 200 with no body when method returns void
+                    //WebOperationContext.Current.OutgoingResponse.StatusCode = System.Net.HttpStatusCode.OK;
+                }
 
                 response.code = "0";
                 response.message = "success";
 
                 if (DeviceDataSentResponse != null)
                     DeviceDataSentResponse(this, JsonConvert.SerializeObject(response));
+
+                
+                
 
             }
             catch (Exception ex)
@@ -94,7 +135,6 @@ namespace ATTSystems.Net.Devices.PeopleCounter
                     ServiceErrorReceived(this, ex);
             }
             return response;
-
         }
 
         

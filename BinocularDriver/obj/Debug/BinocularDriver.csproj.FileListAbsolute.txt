@@ -9,3 +9,14 @@ D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Debug\Binoc
 D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Debug\BinocularDriver.dll
 D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Debug\BinocularDriver.pdb
 D:\Git\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\Newtonsoft.Json.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Debug\BinocularDriver.csprojResolveAssemblyReference.cache
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Debug\BinocularDriver.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\obj\Debug\BinocularDriver.pdb
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\BinocularDriver.dll.config
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\BinocularDriver.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\BinocularDriver.pdb
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\IDeviceDriver.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\IPeopleCounterDriver.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\Newtonsoft.Json.dll
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\IDeviceDriver.pdb
+D:\Working Folder\ATT Systems\github-gits\att_devices_peoplecounter_binoculardriver\BinocularDriver\bin\Debug\IPeopleCounterDriver.pdb

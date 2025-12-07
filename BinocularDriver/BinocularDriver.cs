@@ -210,41 +210,107 @@ namespace ATTSystems.Net.Devices.PeopleCounter
 
                     if (CounterTransactionReceived != null)
                     {
-                        CounterTransaction transaction = new CounterTransaction();
+                        
                         API.ReportData reportData = e.ReportData.FirstOrDefault();
                         if (reportData == null) return;
 
                         API.Report report = reportData.Report.FirstOrDefault();
                         if (report == null) return;
 
-                        API.Object xmlObject = report.Object.FirstOrDefault();
-                        if (xmlObject == null) return;
 
-                        IEnumerable<IGrouping<string, API.Count>> transactionGroupList = xmlObject.Count.GroupBy(v => v.StartTime);
-                        
-                        foreach(IGrouping<string,API.Count> transactionGroup in transactionGroupList)
+                        // Process each Object (v2.1 has multiple objects with different ObjectTypes)
+                        foreach (API.Object xmlObject in report.Object)
                         {
-                            //API.Count count = xmlObject.Count.FirstOrDefault();
-                            //if (count == null) return;
+                            // Handle standard Count data (ObjectType 0, 1, 2)
+                            if (xmlObject.Count != null && xmlObject.Count.Any())
+                            {
+                                IEnumerable<IGrouping<string, API.Count>> transactionGroupList =
+                                    xmlObject.Count.GroupBy(v => v.StartTime);
 
-                            transaction.DeviceId = e.DeviceId;
-                            transaction.TransactionId = e.Properties.First().TransmitTime;
-                            transaction.TransactionDevice = controller;
-                            DateTime reportDate = Convert.ToDateTime(report.Date);
+                                foreach (IGrouping<string, API.Count> transactionGroup in transactionGroupList)
+                                {
+                                    CounterTransaction transaction = new CounterTransaction();
+                                    transaction.DeviceId = e.DeviceId;
+                                    transaction.TransactionId = e.Properties.First().TransmitTime;
+                                    transaction.TransactionDevice = controller;
+                                    DateTime reportDate = Convert.ToDateTime(report.Date);
 
-                            transaction.StartTime = reportDate.Date.Add(Convert.ToDateTime(transactionGroup.Last().StartTime).TimeOfDay);
-                            transaction.EndTime = reportDate.Date.Add(Convert.ToDateTime(transactionGroup.Last().StartTime).TimeOfDay);
-                            transaction.TransactionReceivedTime = transaction.StartTime;
+                                    transaction.StartTime = reportDate.Date.Add(Convert.ToDateTime(transactionGroup.Last().StartTime).TimeOfDay);
+                                    transaction.EndTime = reportDate.Date.Add(Convert.ToDateTime(transactionGroup.Last().EndTime).TimeOfDay);
+                                    transaction.TransactionReceivedTime = transaction.StartTime;
 
-                            transaction.Enters = transactionGroup.Last().Enters;
-                            transaction.Exits = transactionGroup.Last().Exits;
-                            transaction.Returns = transactionGroup.Last().Returns;
-                            transaction.Passings = transactionGroup.Last().Passings;
-                            transaction.TotalPeople = transaction.Enters - transaction.Exits;
+                                    transaction.Enters = transactionGroup.Last().Enters;
+                                    transaction.Exits = transactionGroup.Last().Exits;
+                                    transaction.Returns = transactionGroup.Last().Returns;
+                                    transaction.Passings = transactionGroup.Last().Passings;
+                                    transaction.TotalPeople = transaction.Enters - transaction.Exits;
 
-                            CounterTransactionReceived(this, transaction);
+                                    // NEW: Add ObjectType to identify data type
+                                    // You may need to add this property to CounterTransaction class
+                                    // transaction.ObjectType = xmlObject.ObjectType;
+
+                                    CounterTransactionReceived(this, transaction);
+                                }
+                            }
+
+                            // NEW: Handle demographic data (ObjectType 3)
+                            if (xmlObject.ObjectType == "3")
+                            {
+                                // Handle GenderCount data
+                                if (xmlObject.GenderCount != null && xmlObject.GenderCount.Any())
+                                {
+                                    // Process gender data
+                                    // You'll need to create appropriate events/handlers for this data
+                                }
+
+                                // Handle AgeCount data
+                                if (xmlObject.AgeCount != null && xmlObject.AgeCount.Any())
+                                {
+                                    // Process age data
+                                    // You'll need to create appropriate events/handlers for this data
+                                }
+
+                                // Handle WorkCardCount data
+                                if (xmlObject.WorkCardCount != null && xmlObject.WorkCardCount.Any())
+                                {
+                                    // Process employee card data
+                                    // You'll need to create appropriate events/handlers for this data
+                                }
+                            }
                         }
 
+                        #region Old version before change to fix the impact of new API v2.1
+
+                        //API.Object xmlObject = report.Object.FirstOrDefault();
+                        //if (xmlObject == null) return;
+
+                        //IEnumerable<IGrouping<string, API.Count>> transactionGroupList = xmlObject.Count.GroupBy(v => v.StartTime);
+
+                        //foreach (IGrouping<string, API.Count> transactionGroup in transactionGroupList)
+                        //{
+                        //    //API.Count count = xmlObject.Count.FirstOrDefault();
+                        //    //if (count == null) return;
+                        //    CounterTransaction transaction = new CounterTransaction();
+
+                        //    transaction.DeviceId = e.DeviceId;
+                        //    transaction.TransactionId = e.Properties.First().TransmitTime;
+                        //    transaction.TransactionDevice = controller;
+                        //    DateTime reportDate = Convert.ToDateTime(report.Date);
+
+                        //    transaction.StartTime = reportDate.Date.Add(Convert.ToDateTime(transactionGroup.Last().StartTime).TimeOfDay);
+                        //    transaction.EndTime = reportDate.Date.Add(Convert.ToDateTime(transactionGroup.Last().StartTime).TimeOfDay);
+                        //    transaction.TransactionReceivedTime = transaction.StartTime;
+
+                        //    transaction.Enters = transactionGroup.Last().Enters;
+                        //    transaction.Exits = transactionGroup.Last().Exits;
+                        //    transaction.Returns = transactionGroup.Last().Returns;
+                        //    transaction.Passings = transactionGroup.Last().Passings;
+                        //    transaction.TotalPeople = transaction.Enters - transaction.Exits;
+
+                        //    CounterTransactionReceived(this, transaction);
+                        //}
+                        #endregion
+                        
                         #region Cumulative Scenario
                         //foreach(API.Count count in xmlObject.Count)
                         //{

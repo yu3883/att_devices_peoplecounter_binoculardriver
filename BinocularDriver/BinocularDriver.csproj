@@ -46,19 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\AgeCount.cs" />
     <Compile Include="API\APIPath.cs" />
     <Compile Include="API\BasicRequest.cs" />
     <Compile Include="API\BasicResponse.cs" />
     <Compile Include="API\Count.cs" />
     <Compile Include="API\CounterTransactionRequest.cs" />
+    <Compile Include="API\GenderCount.cs" />
     <Compile Include="API\HeartBeatResponse.cs" />
     <Compile Include="API\CounterTransactionResponse.cs" />
     <Compile Include="API\Diags.cs" />
     <Compile Include="API\Metrics.cs" />
+    <Compile Include="API\RTMetrics.cs" />
     <Compile Include="API\Object.cs" />
     <Compile Include="API\Properties.cs" />
     <Compile Include="API\Report.cs" />
     <Compile Include="API\ReportData.cs" />
+    <Compile Include="API\WorkCardCount.cs" />
     <Compile Include="BinocularDriver.cs" />
     <Compile Include="BinocularDriverWebService.cs" />
     <Compile Include="IBinocularDriverWebService.cs" />

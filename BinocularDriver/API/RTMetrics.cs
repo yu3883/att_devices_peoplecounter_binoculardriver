@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 namespace ATTSystems.Net.Devices.PeopleCounter.API
 {
     [XmlRoot]
-    public class Metrics
+    public class RTMetrics
     {
         [XmlAttribute("SiteId")]
         public string SiteId { get; set; }
