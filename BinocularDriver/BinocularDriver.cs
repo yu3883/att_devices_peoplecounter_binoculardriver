@@ -26,7 +26,7 @@ namespace ATTSystems.Net.Devices.PeopleCounter
 
         List<PeopleCounterDevice> ActiveDeviceList = new List<PeopleCounterDevice>();
 
-        private int deviceAliveTimeInSecond = 60;  //5 minutes
+        private int deviceAliveTimeInSecond = 90;  //5 minutes
         System.Timers.Timer deviceCheckTimer;
         public ControllerProperties Controller
         {
